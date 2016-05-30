@@ -44,25 +44,6 @@
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
-    var form = document.getElementById('contact1');
-    $('form').on('submit', function(e){
-
-        e.preventDefault();
-        $.ajax({
-            type: 'post',
-            url: 'mail_post.php',
-            data: ({
-                email: form.elements[1].value,
-                name: form.elements[0].value,
-                message: form.elements[2].value
-            }),
-            dataType: 'JSON',
-        success: function () {
-            console.log($('form').serialize());
-            alert('Mail Sent');
-        },error: function(){alert('There was an error.')}
-        });
-    })
 
 
 })(jQuery); // End of use strict

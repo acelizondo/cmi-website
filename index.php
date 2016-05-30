@@ -1,3 +1,22 @@
+<?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $from = 'From: CMI Website';
+    $to = 'acelizondo11@gmail.com';
+    $subject = "Feedback from $email";
+
+    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+    if(isset($_POST['submit'])) {
+        if (mail($to, $subject, $body, $from)) {
+            echo '<p>Your message has been sent!</p>';
+        } else {
+            echo '<p>Something went wrong, go back and try again!</p>';
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,7 +88,7 @@
                     <a class="page-scroll" href="#portfolio">Events</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="index.php#contact">Contact</a>
                 </li>
             </ul>
             <!--navbar-collapse-->
@@ -263,7 +282,7 @@
     </div>
 </aside>
 
-<section id="contactForm">
+<!--<section id="contactForm">
     <form id="contact1" method="post" action="index.php">
         <label>Name</label>
         <input id="name" name="name" placeholder="Type Here">
@@ -274,40 +293,47 @@
         <label>Message</label>
         <textarea id="message" name="message" placeholder="Type Here"></textarea>
 
-        <button id="submit" name="submit">Submit</button>
+        <input id="submit" name="submit" type="submit" value="Submit">
     </form>
-</section>
+</section>-->
 
 <!--Contact Section-->
 <section id="contact">
     <div class="container">
         <div class="row">
+
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Let's Get In Touch!</h2>
                 <hr class="primary">
                 <p>Have any questions? Send us an email or call!</p>
             </div>
-            <div class="col-lg-4 col-lg-offset-2 text-center">
-                <i class="fa fa-phone fa-3x wow bounceIn"></i>
 
-                <p>123-456-6789</p>
+            <div>
+                <form id="contact1" method="post" action="index.php">
+                    <label class="text-center">Name</label>
+                    <input id="name" name="name" placeholder="Type Here">
+
+                    <label class="text-center">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Type Here">
+
+                    <label class="text-center">Message</label>
+                    <textarea id="message" name="message" placeholder="Type Here"></textarea>
+
+                    <input class="col-lg-4 col-lg-offset-4" id="submit" name="submit" type="submit" value="Submit">
+                </form>
             </div>
-            <div class="col-lg-4 text-center">
-                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
 
-
-                <p><a href="mailto:your-email@your-domain.com">example@domain.com</a></p>
-            </div>
-            <div class="col-lg-4 col-lg-offset-2 text-center">
+            <div class="col-lg-4 col-lg-offset-2 text-center" style="margin-top:20px;">
                 <i class="fa fa-twitter fa-3x wow bounceIn" name="twitter"></i>
 
                 <p><a href="https://twitter.com/CMIBadgers" target="_blank">@CMIBadgers</a></p>
             </div>
-            <div class="col-lg-4 text-center">
+
+            <div class="col-lg-4 text-center" style="margin-top:20px;">
                 <i class="fa fa-facebook fa-3x wow bounceIn" name="facebook"></i>
 
                 <p><a href="https://www.facebook.com/CMIBadgers"
-                      target="_blank">www.facebook.com/CMIBadgers</a></p>
+                      target="_blank">CMI Badgers</a></p>
             </div>
         </div>
     </div>

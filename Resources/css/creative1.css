@@ -508,12 +508,6 @@ label{
     letter-spacing:2px;
 }
 
-#contactForm {
-    display:block;
-    margin:0 auto;
-    width:576px;
-}
-
 form {
     margin:0 auto;
     width:459px;
@@ -554,3 +548,4 @@ input:focus, textarea:focus {
 #submit:hover {
     opacity:.9;
 }
+
