@@ -110,7 +110,8 @@
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Who are we?</h2>
                 <hr class="light">
-                <p class="text-faded">Dope description of CMI Here(To be written by greater minds than mine)</p>
+                <p class="text-faded">Campus Ministry International (CMI)
+                    is a ministry of the UPCI and ALJC that was formed to enable and encourage local churches to effectively reach out to the college and university populations in their vicinities with the gospel of Jesus Christ.</p>
                 <!--<a href="#" class="btn btn-default btn-xl">Get Started!</a>-->
             </div>
         </div>

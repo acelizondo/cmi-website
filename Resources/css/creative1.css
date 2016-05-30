@@ -55,6 +55,10 @@ p {
     background-color: #f05f40;
 }
 
+.bg-primary p {
+    font-size: 20px;
+}
+
 .bg-dark {
     color: #fff;
     background-color: #222;
@@ -244,6 +248,7 @@ header .header-content .header-content-inner p {
 }
 
 .section-heading {
+    font-size: 35px;
     margin-top: 0;
 }
 
