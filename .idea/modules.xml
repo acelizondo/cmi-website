@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:/wamp/www/CMI-Website/.idea/CMI-Website.iml" filepath="C:/wamp/www/CMI-Website/.idea/CMI-Website.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/cmi-website.iml" filepath="$PROJECT_DIR$/.idea/cmi-website.iml" />
     </modules>
   </component>
 </project>

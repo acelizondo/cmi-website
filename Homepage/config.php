@@ -1,6 +1,6 @@
 <?php
     define("SERVER_PATH", $_SERVER['DOCUMENT_ROOT']);
-    require(SERVER_PATH. "CMI-Website/global_config.php");
+    require(SERVER_PATH. "/git/cmi-website/global_config.php");
     global $config;
     $config['server_path']          = SERVER_PATH;
     $config['abs_url']              = 'CMI-Website/homepage';
