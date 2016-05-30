@@ -55,6 +55,10 @@ p {
     background-color: #f05f40;
 }
 
+.bg-primary p {
+    font-size: 20px;
+}
+
 .bg-dark {
     color: #fff;
     background-color: #222;
@@ -156,7 +160,7 @@ aside {
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 14px;
+        font-size: 20px;
         color: #f05f40;
     }
 
@@ -244,6 +248,7 @@ header .header-content .header-content-inner p {
 }
 
 .section-heading {
+    font-size: 35px;
     margin-top: 0;
 }
 
@@ -500,3 +505,52 @@ i[name=facebook]{
 #contact-top{
     margin-top: 50px;
 }
+
+/*Contact Form*/
+label{
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+/* Style the text boxes */
+input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+textarea {
+    height: 213px;
+}
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+#submit {
+    width:127px;
+    height:38px;
+    /*text-indent:-9999px;*/
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+#submit:hover {
+    opacity:.9;
+}
+
