@@ -264,17 +264,17 @@
 </aside>
 
 <section id="contactForm">
-    <form method="post" action="index.php">
+    <form id="contact1" method="post" action="index.php">
         <label>Name</label>
-        <input name="name" placeholder="Type Here">
+        <input id="name" name="name" placeholder="Type Here">
 
         <label>Email</label>
-        <input name="email" type="email" placeholder="Type Here">
+        <input id="email" name="email" type="email" placeholder="Type Here">
 
         <label>Message</label>
-        <textarea name="message" placeholder="Type Here"></textarea>
+        <textarea id="message" name="message" placeholder="Type Here"></textarea>
 
-        <input id="submit" name="submit" type="submit" value="Submit">
+        <button id="submit" name="submit">Submit</button>
     </form>
 </section>
 
