@@ -72,7 +72,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a id="cmiMadison" class="navbar-brand page-scroll" href="https://www.facebook.com/">CMI-Madison</a>
+            <a id="cmiMadison" class="navbar-brand page-scroll" href="#">CMI-Madison</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling-->
